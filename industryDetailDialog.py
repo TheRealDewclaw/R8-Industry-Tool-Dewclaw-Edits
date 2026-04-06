@@ -256,11 +256,9 @@ class IndustryDetailDialog(QDialog):
             if prod is None:
                 continue  # Skip if producer not found (shouldn't happen)
 
-            # Parse tags (space or comma separated) - column 2
+            # Parse tags (comma separated) - column 2
             tags_text = self.ui.producers_table.item(i, 2).text().strip()
-            # Replace commas with spaces, then split by whitespace
-            tags_text = tags_text.replace(',', ' ')
-            tag_list = [tag for tag in tags_text.split() if tag]
+            tag_list = [tag.strip() for tag in tags_text.split(',') if tag.strip()]
 
             # capacity - column 3
             prod.capacity = int(self.ui.producers_table.item(i, 3).text())

@@ -31,6 +31,7 @@ In the lower right corner of the main window there is a `find` button. This will
    - Basic information (name, local name, symbol)
    - Track assignments
    - Producer configurations (car types, hours, capacity, tags)
+      - NOTE: You **must** separate processed tags with a comma.
 3. Click **Update** to keep changes or **Cancel** to discard
 
 ### Track Management
