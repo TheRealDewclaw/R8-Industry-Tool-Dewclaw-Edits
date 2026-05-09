@@ -268,7 +268,7 @@ class IndustryDetailDialog(QDialog):
 
             # produce_empties - column 5
             produce_empties_text = self.ui.producers_table.item(i, 5).text().strip().lower()
-            prod.produce_empties = produce_empties_text in ['yes', 'y', '1', 'true']
+            prod.produce_empties = produce_empties_text in ['yes', 'y', '1', 'true','empties']
 
             # Rebuild tags list
             prod.tags = []
